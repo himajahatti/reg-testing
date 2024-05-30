@@ -1,0 +1,44 @@
+        -:    0:Source:calculator.c
+        -:    0:Graph:calculator.gcno
+        -:    0:Data:calculator.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:# include <stdio.h>
+        -:    2:
+        3:    3:int add(int a,int b){
+        3:    4:    return a+b;
+        -:    5:}
+        3:    6:int sub(int a, int b){
+        3:    7:    return a-b;
+        -:    8:}
+        3:    9:int multiply(int a,int b){
+        3:   10:    return a*b;
+        -:   11:}
+        3:   12:int divide(int a,int b){
+        3:   13:    if(b==0){
+        1:   14:        printf("Error: divide by Zero error");
+        -:   15:    }
+        -:   16:    else{
+        4:   17:        return a/b;
+        -:   18:    }
+        1:   19:}
+        1:   20:int main(){
+        1:   21:    int a =7;
+        1:   22:    int b = 3;
+        1:   23:    printf("Addition : %d\n",add(a,b));
+        1:   24:    printf("Subtraction : %d\n",sub(a,b));
+        1:   25:    printf("Multiplication : %d\n",multiply(a,b));
+        1:   26:    printf("Division : %d\n",divide(a,b));
+        -:   27:
+        1:   28:    printf("Addition : %d\n",add(10,5));
+        1:   29:    printf("Subtraction : %d\n",sub(8,4));
+        1:   30:    printf("Multiplication : %d\n",multiply(9,0));
+        1:   31:    printf("Division : %d\n",divide(7,5));
+        -:   32:
+        1:   33:    printf("Addition : %d\n",add(0,0));
+        1:   34:    printf("Subtraction : %d\n",sub(0,0));
+        1:   35:    printf("Multiplication : %d\n",multiply(0,0));
+        1:   36:    printf("Division : %d\n",divide(0,0));
+        -:   37:
+        -:   38:
+        -:   39:}

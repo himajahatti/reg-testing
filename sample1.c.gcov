@@ -1,0 +1,22 @@
+        -:    0:Source:sample1.c
+        -:    0:Graph:sample1.gcno
+        -:    0:Data:sample1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:# include<stdio.h>
+        3:    2:void feature(int a,int b){
+        3:    3:    if(a>b){
+        1:    4:        printf("a is greater than b");
+        -:    5:    }
+        2:    6:    else if(a<b){
+        1:    7:        printf("a is less than b");
+        -:    8:    }
+        -:    9:    else{
+        1:   10:        printf("a is equal to b");
+        -:   11:    }
+        3:   12:}
+        1:   13:int main(){
+        1:   14:    feature(7,4);
+        1:   15:    feature(3,8);
+        1:   16:    feature(5,5);
+        -:   17:}
